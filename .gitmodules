@@ -1,0 +1,3 @@
+[submodule "FlatUI"]
+	path = FlatUI
+	url = https://github.com/saneki-discontinued/FlatUI.git
