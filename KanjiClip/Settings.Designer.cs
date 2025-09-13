@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             this.formSkin1 = new FlatUI.FormSkin();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.nanoGPTBaseUrl = new FlatUI.FlatTextBox();
@@ -37,9 +38,9 @@
             this.flatLabel3 = new FlatUI.FlatLabel();
             this.imgBBKey = new FlatUI.FlatTextBox();
             this.flatButton1 = new FlatUI.FlatButton();
+            this.flatButton2 = new KanjiClip.Components.FlatButton();
             this.flatClose1 = new FlatUI.FlatClose();
             this.flatMini1 = new FlatUI.FlatMini();
-            this.flatButton2 = new KanjiClip.Components.FlatButton();
             this.formSkin1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -186,6 +187,21 @@
             this.flatButton1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             this.flatButton1.Click += new System.EventHandler(this.SaveSettings);
             // 
+            // flatButton2
+            // 
+            this.flatButton2.BackColor = System.Drawing.Color.Transparent;
+            this.flatButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.flatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flatButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.flatButton2.Location = new System.Drawing.Point(3, 192);
+            this.flatButton2.Name = "flatButton2";
+            this.flatButton2.Rounded = false;
+            this.flatButton2.Size = new System.Drawing.Size(106, 28);
+            this.flatButton2.TabIndex = 11;
+            this.flatButton2.Text = "Cancel";
+            this.flatButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            this.flatButton2.Click += new System.EventHandler(this.Close);
+            // 
             // flatClose1
             // 
             this.flatClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -212,21 +228,6 @@
             this.flatMini1.Text = "flatMini1";
             this.flatMini1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
-            // flatButton2
-            // 
-            this.flatButton2.BackColor = System.Drawing.Color.Transparent;
-            this.flatButton2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.flatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.flatButton2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.flatButton2.Location = new System.Drawing.Point(3, 192);
-            this.flatButton2.Name = "flatButton2";
-            this.flatButton2.Rounded = false;
-            this.flatButton2.Size = new System.Drawing.Size(106, 28);
-            this.flatButton2.TabIndex = 11;
-            this.flatButton2.Text = "Cancel";
-            this.flatButton2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            this.flatButton2.Click += new System.EventHandler(this.Close);
-            // 
             // Settings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -234,6 +235,7 @@
             this.ClientSize = new System.Drawing.Size(265, 305);
             this.Controls.Add(this.formSkin1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Settings";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Settings";

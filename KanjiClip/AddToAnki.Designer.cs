@@ -28,20 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddToAnki));
             this.formSkin1 = new FlatUI.FormSkin();
-            this.flatMini1 = new FlatUI.FlatMini();
-            this.flatClose1 = new FlatUI.FlatClose();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.meaning = new FlatUI.FlatTextBox();
+            this.flatLabel4 = new FlatUI.FlatLabel();
+            this.hiragana = new FlatUI.FlatTextBox();
+            this.flatLabel3 = new FlatUI.FlatLabel();
             this.flatComboBox1 = new FlatUI.FlatComboBox();
             this.flatLabel1 = new FlatUI.FlatLabel();
             this.kanji = new FlatUI.FlatTextBox();
             this.flatLabel2 = new FlatUI.FlatLabel();
-            this.flatLabel3 = new FlatUI.FlatLabel();
-            this.hiragana = new FlatUI.FlatTextBox();
-            this.flatLabel4 = new FlatUI.FlatLabel();
-            this.meaning = new FlatUI.FlatTextBox();
             this.flatButton1 = new FlatUI.FlatButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.flatClose1 = new FlatUI.FlatClose();
+            this.flatMini1 = new FlatUI.FlatMini();
             this.formSkin1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,32 +65,6 @@
             this.formSkin1.Size = new System.Drawing.Size(254, 301);
             this.formSkin1.TabIndex = 0;
             this.formSkin1.Text = "Add Card to Anki";
-            // 
-            // flatMini1
-            // 
-            this.flatMini1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatMini1.BackColor = System.Drawing.Color.White;
-            this.flatMini1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
-            this.flatMini1.Font = new System.Drawing.Font("Marlett", 12F);
-            this.flatMini1.Location = new System.Drawing.Point(199, 12);
-            this.flatMini1.Name = "flatMini1";
-            this.flatMini1.Size = new System.Drawing.Size(18, 18);
-            this.flatMini1.TabIndex = 1;
-            this.flatMini1.Text = "flatMini1";
-            this.flatMini1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
-            // 
-            // flatClose1
-            // 
-            this.flatClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.flatClose1.BackColor = System.Drawing.Color.White;
-            this.flatClose1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
-            this.flatClose1.Font = new System.Drawing.Font("Marlett", 10F);
-            this.flatClose1.Location = new System.Drawing.Point(224, 12);
-            this.flatClose1.Name = "flatClose1";
-            this.flatClose1.Size = new System.Drawing.Size(18, 18);
-            this.flatClose1.TabIndex = 2;
-            this.flatClose1.Text = "flatClose1";
-            this.flatClose1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
             // 
             // tableLayoutPanel1
             // 
@@ -117,6 +92,64 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(248, 245);
             this.tableLayoutPanel1.TabIndex = 3;
+            // 
+            // meaning
+            // 
+            this.meaning.BackColor = System.Drawing.Color.Transparent;
+            this.meaning.FocusOnHover = false;
+            this.meaning.Location = new System.Drawing.Point(96, 159);
+            this.meaning.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.meaning.MaxLength = 32767;
+            this.meaning.Multiline = false;
+            this.meaning.Name = "meaning";
+            this.meaning.ReadOnly = false;
+            this.meaning.Size = new System.Drawing.Size(149, 29);
+            this.meaning.TabIndex = 7;
+            this.meaning.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.meaning.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.meaning.UseSystemPasswordChar = false;
+            // 
+            // flatLabel4
+            // 
+            this.flatLabel4.AutoSize = true;
+            this.flatLabel4.BackColor = System.Drawing.Color.Transparent;
+            this.flatLabel4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.flatLabel4.ForeColor = System.Drawing.Color.White;
+            this.flatLabel4.Location = new System.Drawing.Point(3, 160);
+            this.flatLabel4.Margin = new System.Windows.Forms.Padding(3, 13, 3, 0);
+            this.flatLabel4.Name = "flatLabel4";
+            this.flatLabel4.Size = new System.Drawing.Size(71, 21);
+            this.flatLabel4.TabIndex = 6;
+            this.flatLabel4.Text = "Meaning";
+            // 
+            // hiragana
+            // 
+            this.hiragana.BackColor = System.Drawing.Color.Transparent;
+            this.hiragana.FocusOnHover = false;
+            this.hiragana.Location = new System.Drawing.Point(96, 110);
+            this.hiragana.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
+            this.hiragana.MaxLength = 32767;
+            this.hiragana.Multiline = false;
+            this.hiragana.Name = "hiragana";
+            this.hiragana.ReadOnly = false;
+            this.hiragana.Size = new System.Drawing.Size(149, 29);
+            this.hiragana.TabIndex = 5;
+            this.hiragana.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.hiragana.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.hiragana.UseSystemPasswordChar = false;
+            // 
+            // flatLabel3
+            // 
+            this.flatLabel3.AutoSize = true;
+            this.flatLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.flatLabel3.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.flatLabel3.ForeColor = System.Drawing.Color.White;
+            this.flatLabel3.Location = new System.Drawing.Point(3, 111);
+            this.flatLabel3.Margin = new System.Windows.Forms.Padding(3, 13, 3, 0);
+            this.flatLabel3.Name = "flatLabel3";
+            this.flatLabel3.Size = new System.Drawing.Size(73, 21);
+            this.flatLabel3.TabIndex = 4;
+            this.flatLabel3.Text = "Hiragana";
             // 
             // flatComboBox1
             // 
@@ -177,64 +210,6 @@
             this.flatLabel2.TabIndex = 3;
             this.flatLabel2.Text = "Kanji";
             // 
-            // flatLabel3
-            // 
-            this.flatLabel3.AutoSize = true;
-            this.flatLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.flatLabel3.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.flatLabel3.ForeColor = System.Drawing.Color.White;
-            this.flatLabel3.Location = new System.Drawing.Point(3, 111);
-            this.flatLabel3.Margin = new System.Windows.Forms.Padding(3, 13, 3, 0);
-            this.flatLabel3.Name = "flatLabel3";
-            this.flatLabel3.Size = new System.Drawing.Size(73, 21);
-            this.flatLabel3.TabIndex = 4;
-            this.flatLabel3.Text = "Hiragana";
-            // 
-            // hiragana
-            // 
-            this.hiragana.BackColor = System.Drawing.Color.Transparent;
-            this.hiragana.FocusOnHover = false;
-            this.hiragana.Location = new System.Drawing.Point(96, 110);
-            this.hiragana.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.hiragana.MaxLength = 32767;
-            this.hiragana.Multiline = false;
-            this.hiragana.Name = "hiragana";
-            this.hiragana.ReadOnly = false;
-            this.hiragana.Size = new System.Drawing.Size(149, 29);
-            this.hiragana.TabIndex = 5;
-            this.hiragana.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.hiragana.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.hiragana.UseSystemPasswordChar = false;
-            // 
-            // flatLabel4
-            // 
-            this.flatLabel4.AutoSize = true;
-            this.flatLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.flatLabel4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.flatLabel4.ForeColor = System.Drawing.Color.White;
-            this.flatLabel4.Location = new System.Drawing.Point(3, 160);
-            this.flatLabel4.Margin = new System.Windows.Forms.Padding(3, 13, 3, 0);
-            this.flatLabel4.Name = "flatLabel4";
-            this.flatLabel4.Size = new System.Drawing.Size(71, 21);
-            this.flatLabel4.TabIndex = 6;
-            this.flatLabel4.Text = "Meaning";
-            // 
-            // meaning
-            // 
-            this.meaning.BackColor = System.Drawing.Color.Transparent;
-            this.meaning.FocusOnHover = false;
-            this.meaning.Location = new System.Drawing.Point(96, 159);
-            this.meaning.Margin = new System.Windows.Forms.Padding(3, 12, 3, 3);
-            this.meaning.MaxLength = 32767;
-            this.meaning.Multiline = false;
-            this.meaning.Name = "meaning";
-            this.meaning.ReadOnly = false;
-            this.meaning.Size = new System.Drawing.Size(149, 29);
-            this.meaning.TabIndex = 7;
-            this.meaning.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.meaning.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.meaning.UseSystemPasswordChar = false;
-            // 
             // flatButton1
             // 
             this.flatButton1.BackColor = System.Drawing.Color.Transparent;
@@ -264,6 +239,32 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.Cancel);
             // 
+            // flatClose1
+            // 
+            this.flatClose1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.flatClose1.BackColor = System.Drawing.Color.White;
+            this.flatClose1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(35)))), ((int)(((byte)(35)))));
+            this.flatClose1.Font = new System.Drawing.Font("Marlett", 10F);
+            this.flatClose1.Location = new System.Drawing.Point(224, 12);
+            this.flatClose1.Name = "flatClose1";
+            this.flatClose1.Size = new System.Drawing.Size(18, 18);
+            this.flatClose1.TabIndex = 2;
+            this.flatClose1.Text = "flatClose1";
+            this.flatClose1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            // 
+            // flatMini1
+            // 
+            this.flatMini1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.flatMini1.BackColor = System.Drawing.Color.White;
+            this.flatMini1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(47)))), ((int)(((byte)(49)))));
+            this.flatMini1.Font = new System.Drawing.Font("Marlett", 12F);
+            this.flatMini1.Location = new System.Drawing.Point(199, 12);
+            this.flatMini1.Name = "flatMini1";
+            this.flatMini1.Size = new System.Drawing.Size(18, 18);
+            this.flatMini1.TabIndex = 1;
+            this.flatMini1.Text = "flatMini1";
+            this.flatMini1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(243)))), ((int)(((byte)(243)))));
+            // 
             // AddToAnki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +272,7 @@
             this.ClientSize = new System.Drawing.Size(254, 301);
             this.Controls.Add(this.formSkin1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddToAnki";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add card to Anki";
