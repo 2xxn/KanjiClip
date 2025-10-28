@@ -19,7 +19,7 @@ namespace KanjiClip
     internal class NanoGPTClient
     {
         public const string DefaultUrl = "https://nano-gpt.com/api/v1";
-        public const string Model = "chatgpt-4o-latest";
+        public const string Model = "deepseek-v3.2-exp-original";
 
         private readonly string token;
         private readonly string apiUrl;
